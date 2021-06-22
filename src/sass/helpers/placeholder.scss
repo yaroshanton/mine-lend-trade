@@ -3,3 +3,22 @@
 //  font-family: "Montserrat", sans-serif;
 //  font-weight: 400;
 // }
+
+%button {
+ font-family: "MuseoSansCyrl500";
+ cursor: pointer;
+
+ background-color: #6248ff;
+ border-radius: 60px;
+ color: #fff;
+ text-transform: uppercase;
+ border: none;
+}
+
+%button-hover {
+ background-color: #7181fc;
+}
+
+%button-active {
+ background-color: #354cf4;
+}

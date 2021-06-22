@@ -1,0 +1,47 @@
+.title-bg {
+ background-color: #efedff;
+}
+
+.title {
+ display: flex;
+ &-left {
+  padding-top: 139px;
+  h1 {
+   font-family: "MuseoSansCyrl500";
+   font-size: 64px;
+   max-width: 585px;
+   margin-bottom: 32px;
+  }
+
+  p {
+   font-size: 18px;
+   max-width: 483px;
+   line-height: 30px;
+   margin-bottom: 48px;
+  }
+
+  button {
+   @extend %button;
+   width: 257px;
+   height: 54px;
+   font-size: 16px;
+   letter-spacing: 3%;
+
+   &:hover {
+    @extend %button-hover;
+   }
+
+   &:active {
+    @extend %button-active;
+   }
+  }
+ }
+
+ &-right {
+  padding: 100px 0 100px 100px;
+
+  img {
+   width: 428px;
+  }
+ }
+}
