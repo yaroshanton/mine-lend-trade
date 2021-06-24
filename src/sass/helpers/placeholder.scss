@@ -22,3 +22,12 @@
 %button-active {
  background-color: #354cf4;
 }
+
+%position-blue-line {
+ content: "";
+ display: block;
+ width: 200px;
+ height: 58px;
+ position: absolute;
+ background-repeat: no-repeat;
+}

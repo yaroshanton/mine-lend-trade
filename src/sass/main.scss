@@ -7,8 +7,10 @@
 @import "base";
 
 //header
-
 @import "./components/header";
 
 //main
 @import "./components/title";
+
+//info
+@import "./components/info.scss";
