@@ -1,6 +1,14 @@
-// @font-face {
-//  font-family: "Noto Sans";
-//  font-style: normal;
-//  font-weight: 400;
-//  src: url("../fonts/NotoSans-Regular.ttf");
-// }
+@font-face {
+ font-family: "MuseoSansCyrl500";
+ src: url("../fonts/MuseoSansCyrl500.woff") format("woff"),
+  url("../fonts/MuseoSansCyrl500.ttf") format("truetype");
+ font-style: normal;
+ font-weight: 500;
+}
+
+@font-face {
+ font-family: "MuseoSansCyrl700";
+ src: url("../fonts/MuseoSansCyrl700.woff") format("woff");
+ font-style: normal;
+ font-weight: 700;
+}

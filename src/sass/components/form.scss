@@ -1,0 +1,193 @@
+.form {
+ background-color: $background-rose;
+ padding-bottom: 38px;
+
+ @media (min-width: 1280px) {
+  padding-bottom: unset;
+  &-container {
+   display: flex;
+   justify-content: space-between;
+  }
+ }
+
+ &-title {
+  padding-bottom: 32px;
+
+  @media (min-width: 1280px) {
+   padding-bottom: 120px;
+  }
+
+  h2 {
+   padding-top: 48px;
+   padding-bottom: 24px;
+   font-size: 40px;
+   @extend %museo-sans500;
+
+   @media (min-width: 768px) {
+    font-size: 56px;
+    text-align: center;
+    padding-bottom: 32px;
+   }
+
+   @media (min-width: 1280px) {
+    padding-top: 120px;
+   }
+  }
+
+  h3 {
+   font-weight: 400;
+   color: $words-grey;
+   line-height: 30px;
+   font-size: 18px;
+   padding-bottom: 24px;
+
+   @media (min-width: 768px) {
+    width: 508px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+   }
+
+   @media (min-width: 1280px) {
+    padding-bottom: 48px;
+   }
+  }
+
+  p {
+   font-weight: 400;
+   font-size: 16px;
+   color: $words-grey;
+   padding-bottom: 16px;
+   line-height: 27px;
+
+   @media (min-width: 768px) {
+    width: 508px;
+    padding-bottom: 24px;
+    margin: 0 auto;
+   }
+  }
+
+  h4 {
+   @extend %museo-sans500;
+   font-size: 15px;
+   padding-bottom: 8px;
+
+   @media (min-width: 768px) {
+    width: 508px;
+    margin: 0 auto;
+   }
+  }
+ }
+
+ &-group {
+  padding: 48px 16px 0 16px;
+  background-color: #fff;
+  border: 2px solid #4f62f6;
+  border-radius: 20px;
+  position: relative;
+
+  @media (min-width: 768px) {
+   width: 508px;
+   margin: 0 auto;
+  }
+
+  @media (min-width: 1280px) {
+   width: 585px;
+   margin: unset;
+   margin-top: 134px;
+   height: 471px;
+   padding: 80px 80px 16px;
+  }
+
+  p {
+   display: none;
+   @extend %museo-sans500;
+   color: #eb5757;
+   font-size: 15px;
+   position: absolute;
+   top: 270px;
+  }
+
+  input[type="name"] {
+   width: 248px;
+   height: 40px;
+   border: 1px solid #e0e0e0;
+   border-radius: 3px;
+   padding-left: 10px;
+   margin-bottom: 24px;
+
+   @media (min-width: 768px) {
+    width: 425px;
+    margin: 0 auto 24px;
+    display: flex;
+   }
+
+   &:focus {
+    @extend %input-focus-grey;
+   }
+
+   &:valid {
+    @extend %input-focus-valid;
+   }
+  }
+
+  input[type="email"] {
+   width: 248px;
+   height: 40px;
+   border: 1px solid #e0e0e0;
+   border-radius: 3px;
+   padding-left: 10px;
+   margin-bottom: 24px;
+
+   @media (min-width: 768px) {
+    width: 425px;
+    margin: 0 auto 24px;
+    display: flex;
+   }
+
+   &:focus {
+    @extend %input-focus-grey;
+   }
+
+   &:valid {
+    @extend %input-focus-valid;
+   }
+  }
+
+  textarea[type="text"] {
+   width: 248px;
+   height: 89px;
+   border: 1px solid #e0e0e0;
+   border-radius: 3px;
+   padding-top: 10px;
+   padding-left: 10px;
+   margin-bottom: 48px;
+
+   @media (min-width: 768px) {
+    width: 425px;
+    margin: 0 auto 48px;
+    display: flex;
+   }
+
+   &:focus {
+    @extend %input-focus-grey;
+   }
+  }
+
+  button {
+   @extend %button;
+   text-align: center;
+   width: 172px;
+   height: 54px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 48px;
+   letter-spacing: 1.5px;
+
+   @media (min-width: 768px) {
+    margin-bottom: 80px;
+   }
+  }
+ }
+}

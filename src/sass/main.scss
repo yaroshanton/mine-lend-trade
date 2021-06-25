@@ -2,11 +2,27 @@
 
 @import "helpers/variables";
 @import "helpers/placeholder";
-@import "helpers/mixin";
 
 @import "normalize";
 @import "base";
 
 //header
-
 @import "./components/header";
+
+//main
+@import "./components/title";
+
+//info
+@import "./components/info.scss";
+
+// reviews
+@import "./components/reviews.scss";
+
+// questions
+@import "./components/questions.scss";
+
+// form
+@import "./components/form.scss";
+
+// footer
+@import "./components/footer.scss";

@@ -1,5 +1,64 @@
-//font
-// %montserrat-reg {
-//  font-family: "Montserrat", sans-serif;
-//  font-weight: 400;
-// }
+// font
+%museo-sans500 {
+ font-family: "MuseoSansCyrl500";
+ font-weight: 500;
+}
+
+%museo-sans700 {
+ font-family: "MuseoSansCyrl700";
+ font-weight: 700;
+}
+
+// buttons
+%button {
+ font-family: "MuseoSansCyrl500";
+ cursor: pointer;
+
+ background-color: #6248ff;
+ border-radius: 60px;
+ color: #fff;
+ text-transform: uppercase;
+ border: none;
+}
+
+%button-hover {
+ background-color: #7181fc;
+}
+
+%button-active {
+ background-color: #354cf4;
+}
+
+%button-left-right {
+ width: 48px;
+ height: 48px;
+ border-radius: 50%;
+ border: 1px solid #e0e0e0;
+ background-color: #fff;
+}
+
+//position
+%position-blue-line {
+ content: "";
+ display: block;
+ width: 200px;
+ height: 58px;
+ position: absolute;
+ background-repeat: no-repeat;
+}
+
+//input
+%input-focus-grey {
+ border: 1px solid #828282;
+ outline: none;
+}
+
+%input-focus-valid {
+ border: 1px solid #0eac00;
+ outline: none;
+}
+
+%input-focus-invalid {
+ border: 1px solid #eb5757;
+ outline: none;
+}
