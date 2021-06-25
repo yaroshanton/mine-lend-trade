@@ -1,0 +1,133 @@
+.footer {
+ &-top {
+  @media (min-width: 1280px) {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 32px;
+   padding-bottom: 48px;
+  }
+
+  @media (min-width: 1280px) {
+   .footer-about {
+    width: 380px;
+
+    p {
+     width: unset;
+     padding: unset;
+    }
+   }
+  }
+
+  .footer-logo {
+   display: block;
+   padding: 46px 0;
+   text-align: center;
+   margin: 0;
+
+   @media (min-width: 1280px) {
+    padding: unset;
+    text-align: unset;
+    width: 150px;
+   }
+  }
+
+  .footer-list {
+   @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+   }
+
+   @media (min-width: 1280px) {
+    flex-direction: column;
+    order: 4;
+    width: 150px;
+    padding-left: 42px;
+   }
+
+   &-item {
+    list-style: none;
+    padding-bottom: 32px;
+
+    @media (min-width: 768px) {
+     padding-bottom: unset;
+    }
+
+    @media (min-width: 1280px) {
+     padding-bottom: 24px;
+    }
+
+    a {
+     @extend %museo-sans500;
+     font-size: 15px;
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+    }
+   }
+  }
+
+  h3 {
+   @extend %museo-sans500;
+   font-size: 18px;
+   padding-bottom: 16px;
+
+   @media (min-width: 768px) {
+    text-align: center;
+   }
+
+   @media (min-width: 1280px) {
+    text-align: unset;
+   }
+  }
+
+  p {
+   font-weight: 400;
+   color: $words-grey;
+   font-size: 16px;
+   line-height: 27px;
+   padding-bottom: 24px;
+
+   @media (min-width: 768px) {
+    width: 508px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+   }
+  }
+ }
+
+ &-bottom {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+
+  @media (min-width: 768px) {
+   padding-top: 6px;
+   padding-bottom: 32px;
+  }
+
+  @media (min-width: 1280px) {
+   flex-direction: row;
+   justify-content: space-between;
+  }
+
+  p {
+   font-weight: 400;
+   color: #828282;
+   padding-bottom: 16px;
+
+   @media (min-width: 1280px) {
+    width: 355px;
+    text-align: initial;
+   }
+  }
+
+  a {
+   text-decoration: none;
+   font-weight: 400;
+   color: #828282;
+   margin-bottom: 16px;
+  }
+ }
+}

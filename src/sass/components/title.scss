@@ -1,5 +1,5 @@
 .title-bg {
- background-color: #efedff;
+ background-color: $background-rose;
 }
 
 .title {
@@ -51,6 +51,7 @@
 
   p {
    font-size: 18px;
+   color: $words-grey;
    max-width: 483px;
    line-height: 30px;
    margin-bottom: 48px;
