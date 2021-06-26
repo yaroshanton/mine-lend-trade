@@ -1,0 +1,163 @@
+.info {
+ margin-bottom: 80px;
+
+ @media (min-width: 768px) {
+  height: 1000px;
+ }
+
+ &-text {
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 2px solid rgba(79, 98, 246, 1);
+  border-radius: 30px;
+
+  @media (min-width: 768px) {
+   width: 329px;
+   padding: 32px;
+  }
+
+  @media (min-width: 1280px) {
+   width: 483px;
+  }
+ }
+
+ h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+   font-family: "MuseoSansCyrl500";
+   width: 419px;
+   font-size: 56px;
+  }
+
+  @media (min-width: 1280px) {
+   margin-bottom: 68px;
+  }
+ }
+
+ &-text {
+  @media (min-width: 768px) {
+   position: relative;
+  }
+
+  h4 {
+   margin-bottom: 8px;
+   color: #4f62f6;
+  }
+
+  h3 {
+   font-size: 24px;
+   font-weight: 500;
+   margin-bottom: 24px;
+  }
+
+  p {
+   font-size: 18px;
+   line-height: 30px;
+   color: $words-grey;
+  }
+ }
+
+ &-text:nth-child(2)::after {
+  @media (min-width: 768px) {
+   content: "";
+   display: block;
+   background-image: url(../../img/info-720.svg);
+   width: 200px;
+   height: 58px;
+   position: absolute;
+   left: 327px;
+   background-repeat: no-repeat;
+   top: 108px;
+
+   @media (min-width: 1280px) {
+    left: 481px;
+    height: 72px;
+    width: 378px;
+    background-image: url(../../img/info-1200.svg);
+   }
+  }
+ }
+
+ &-text:nth-child(3) {
+  @media (min-width: 768px) {
+   position: relative;
+   bottom: 90px;
+   left: 365px;
+
+   &::after {
+    content: "";
+    display: block;
+    background-image: url(../../img/info-720-left.svg);
+    width: 200px;
+    height: 58px;
+    position: absolute;
+    right: 327px;
+    background-repeat: no-repeat;
+    top: 108px;
+   }
+  }
+
+  @media (min-width: 1280px) {
+   left: 618px;
+   bottom: 45px;
+
+   &::after {
+    height: 72px;
+    width: 378px;
+    right: 481px;
+    background-image: url(../../img/info-1200-left.svg);
+   }
+  }
+ }
+
+ &-text:nth-child(4) {
+  @media (min-width: 768px) {
+   position: relative;
+   bottom: 208px;
+
+   &::after {
+    content: "";
+    display: block;
+    background-image: url(../../img/info-720.svg);
+    width: 200px;
+    height: 58px;
+    position: absolute;
+    left: 327px;
+    background-repeat: no-repeat;
+    top: 150px;
+   }
+  }
+
+  @media (min-width: 1280px) {
+   bottom: 120px;
+
+   &::after {
+    left: 481px;
+    height: 72px;
+    top: 118px;
+    width: 378px;
+    background-image: url(../../img/info-1200.svg);
+   }
+  }
+ }
+
+ &-text:nth-child(5) {
+  @media (min-width: 768px) {
+   position: relative;
+   bottom: 285px;
+   left: 365px;
+  }
+
+  @media (min-width: 1280px) {
+   left: 618px;
+   bottom: 185px;
+  }
+ }
+}
+
+.bg-violet {
+ background: $background-violet;
+}
