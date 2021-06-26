@@ -689,7 +689,7 @@ h2 {
         width: 509px; } }
   .reviews-title__btn-left {
     position: relative;
-    top: 500px;
+    top: 535px;
     background: url(../img/arrow-author-left.svg) no-repeat center center; }
     @media (min-width: 768px) {
       .reviews-title__btn-left {
@@ -701,7 +701,7 @@ h2 {
       border-color: #6248ff; }
   .reviews-title__btn-right {
     position: relative;
-    top: 500px;
+    top: 535px;
     left: 180px;
     background: url(../img/author-arrow-right.svg) no-repeat center center; }
     @media (min-width: 768px) {

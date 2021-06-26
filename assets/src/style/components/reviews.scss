@@ -28,7 +28,7 @@
 
   &__btn-left {
    position: relative;
-   top: 500px;
+   top: 535px;
    @extend%button-left-right;
    background: url(../img/arrow-author-left.svg) no-repeat center center;
 
@@ -47,7 +47,7 @@
 
   &__btn-right {
    position: relative;
-   top: 500px;
+   top: 535px;
    left: 180px;
    @extend%button-left-right;
    background: url(../img/author-arrow-right.svg) no-repeat center center;
