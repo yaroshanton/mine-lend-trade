@@ -30,7 +30,7 @@
    position: relative;
    top: 500px;
    @extend%button-left-right;
-   background: url(../../img/arrow-author-left.svg) no-repeat center center;
+   background: url(../img/arrow-author-left.svg) no-repeat center center;
 
    @media (min-width: 768px) {
     top: 235px;
@@ -50,7 +50,7 @@
    top: 500px;
    left: 180px;
    @extend%button-left-right;
-   background: url(../../img/author-arrow-right.svg) no-repeat center center;
+   background: url(../img/author-arrow-right.svg) no-repeat center center;
 
    @media (min-width: 768px) {
     top: 240px;

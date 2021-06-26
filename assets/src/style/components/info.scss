@@ -64,7 +64,7 @@
   @media (min-width: 768px) {
    content: "";
    display: block;
-   background-image: url(../../img/info-720.svg);
+   background-image: url(../img/info-720.svg);
    width: 200px;
    height: 58px;
    position: absolute;
@@ -76,7 +76,7 @@
     left: 481px;
     height: 72px;
     width: 378px;
-    background-image: url(../../img/info-1200.svg);
+    background-image: url(../img/info-1200.svg);
    }
   }
  }
@@ -90,7 +90,7 @@
    &::after {
     content: "";
     display: block;
-    background-image: url(../../img/info-720-left.svg);
+    background-image: url(../img/info-720-left.svg);
     width: 200px;
     height: 58px;
     position: absolute;
@@ -108,7 +108,7 @@
     height: 72px;
     width: 378px;
     right: 481px;
-    background-image: url(../../img/info-1200-left.svg);
+    background-image: url(../img/info-1200-left.svg);
    }
   }
  }
@@ -121,7 +121,7 @@
    &::after {
     content: "";
     display: block;
-    background-image: url(../../img/info-720.svg);
+    background-image: url(../img/info-720.svg);
     width: 200px;
     height: 58px;
     position: absolute;
@@ -139,7 +139,7 @@
     height: 72px;
     top: 118px;
     width: 378px;
-    background-image: url(../../img/info-1200.svg);
+    background-image: url(../img/info-1200.svg);
    }
   }
  }
