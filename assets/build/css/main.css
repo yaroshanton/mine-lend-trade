@@ -459,7 +459,7 @@ h2 {
           display: block; } }
       .header-login__leng::after {
         content: "";
-        background-image: url(../../img/header-arrow-down.svg);
+        background-image: url(../img/header-arrow-down.svg);
         position: absolute;
         top: 17px;
         left: 50px;
@@ -596,7 +596,7 @@ h2 {
     .info-text:nth-child(2)::after {
       content: "";
       display: block;
-      background-image: url(../../img/info-720.svg);
+      background-image: url(../img/info-720.svg);
       width: 200px;
       height: 58px;
       position: absolute;
@@ -608,7 +608,7 @@ h2 {
       left: 481px;
       height: 72px;
       width: 378px;
-      background-image: url(../../img/info-1200.svg); } }
+      background-image: url(../img/info-1200.svg); } }
   @media (min-width: 768px) {
     .info-text:nth-child(3) {
       position: relative;
@@ -617,7 +617,7 @@ h2 {
       .info-text:nth-child(3)::after {
         content: "";
         display: block;
-        background-image: url(../../img/info-720-left.svg);
+        background-image: url(../img/info-720-left.svg);
         width: 200px;
         height: 58px;
         position: absolute;
@@ -632,7 +632,7 @@ h2 {
         height: 72px;
         width: 378px;
         right: 481px;
-        background-image: url(../../img/info-1200-left.svg); } }
+        background-image: url(../img/info-1200-left.svg); } }
   @media (min-width: 768px) {
     .info-text:nth-child(4) {
       position: relative;
@@ -640,7 +640,7 @@ h2 {
       .info-text:nth-child(4)::after {
         content: "";
         display: block;
-        background-image: url(../../img/info-720.svg);
+        background-image: url(../img/info-720.svg);
         width: 200px;
         height: 58px;
         position: absolute;
@@ -655,7 +655,7 @@ h2 {
         height: 72px;
         top: 118px;
         width: 378px;
-        background-image: url(../../img/info-1200.svg); } }
+        background-image: url(../img/info-1200.svg); } }
   @media (min-width: 768px) {
     .info-text:nth-child(5) {
       position: relative;
@@ -690,7 +690,7 @@ h2 {
   .reviews-title__btn-left {
     position: relative;
     top: 500px;
-    background: url(../../img/arrow-author-left.svg) no-repeat center center; }
+    background: url(../img/arrow-author-left.svg) no-repeat center center; }
     @media (min-width: 768px) {
       .reviews-title__btn-left {
         top: 235px; } }
@@ -703,7 +703,7 @@ h2 {
     position: relative;
     top: 500px;
     left: 180px;
-    background: url(../../img/author-arrow-right.svg) no-repeat center center; }
+    background: url(../img/author-arrow-right.svg) no-repeat center center; }
     @media (min-width: 768px) {
       .reviews-title__btn-right {
         top: 240px;
@@ -832,7 +832,7 @@ h2 {
 .toggle-text-one::after {
   content: "";
   display: inline-block;
-  background: url(../../img/questions_plus.png);
+  background: url(../img/questions_plus.png);
   width: 32px;
   height: 32px;
   position: absolute;
@@ -847,7 +847,7 @@ h2 {
 .toggle-text-two::after {
   content: "";
   display: inline-block;
-  background: url(../../img/questions_plus.png);
+  background: url(../img/questions_plus.png);
   transform: rotate(45deg);
   width: 32px;
   height: 32px;
