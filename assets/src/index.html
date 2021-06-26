@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/base.min.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/main.min.css">
-  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.min.css.map">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
@@ -232,11 +232,11 @@
               </p>
             </div>
             <div class="form-group">
-              <form action="#">
-                <input type="name" placeholder="Name" required>
-                <input type="email" placeholder="Email" required pattern="\S+@[a-z]+.[a-z]+">
-                <p>Incorrect email type</p>
-                <textarea name="text" type="text" placeholder="Message" required></textarea>
+              <form id="contact-form">
+                <input type="name" placeholder="Name" id="name">
+                <input type="text" placeholder="Email" id="email">
+                <p id="form-error">Incorrect email type</p>
+                <textarea name="text" type="text" placeholder="Message"></textarea>
                 <button type="submit">Send</button>
               </form>
             </div>
@@ -288,6 +288,7 @@
       </div>
   </footer>
 
+  <!-- open/close answer in question block -->
   <script>
     const block = document.getElementsByClassName('questions-block');
 
@@ -298,6 +299,7 @@
     }
   </script>
 
+  <!-- toggle x/+ in questions block -->
   <script>
     const iconsToggle = document.getElementsByClassName('questions-block');
 
@@ -313,6 +315,33 @@
         }
       });
     }
+  </script>
+
+  <!-- validation-form -->
+  <script>
+    const contactForm = document.getElementById('contact-form');
+    let inputEmail = document.getElementById('email');
+    const formError = document.getElementById('form-error');
+
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (isEmail(inputEmail.value) == false) {
+        inputEmail.classList.add('invalid-input')
+        inputEmail.classList.remove('valid-input')
+        formError.style.display = 'block'
+      } else {
+        inputEmail.classList.add('valid-input')
+        inputEmail.classList.remove('invalid-input')
+        formError.style.display = 'none'
+      }
+    });
+
+    function isEmail(email) {
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+    }
+
+
   </script>
 
 </body>

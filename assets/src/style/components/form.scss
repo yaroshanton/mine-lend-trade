@@ -104,7 +104,17 @@
    color: #eb5757;
    font-size: 15px;
    position: absolute;
-   top: 270px;
+   top: 155px;
+   left: 17px;
+
+   @media (min-width: 768px) {
+    left: 40px;
+   }
+
+   @media (min-width: 1280px) {
+    left: 81px;
+    top: 187px;
+   }
   }
 
   input[type="name"] {
@@ -124,13 +134,9 @@
    &:focus {
     @extend %input-focus-grey;
    }
-
-   &:valid {
-    @extend %input-focus-valid;
-   }
   }
 
-  input[type="email"] {
+  input[type="text"] {
    width: 248px;
    height: 40px;
    border: 1px solid #e0e0e0;
@@ -147,13 +153,9 @@
    &:focus {
     @extend %input-focus-grey;
    }
-
-   &:valid {
-    @extend %input-focus-valid;
-   }
   }
 
-  textarea[type="text"] {
+  textarea {
    width: 248px;
    height: 89px;
    border: 1px solid #e0e0e0;
@@ -190,4 +192,14 @@
    }
   }
  }
+}
+
+.valid-input {
+ border: 1px solid #0eac00 !important;
+ outline: none;
+}
+
+.invalid-input {
+ border: 1px solid #eb5757 !important;
+ outline: none;
 }
