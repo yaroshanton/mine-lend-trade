@@ -757,7 +757,7 @@ h2 {
     .reviews-comment h3:before {
       content: "";
       display: block;
-      background: url(../../img/dots-author.png) no-repeat center center;
+      background: url(../img/dots-author.png) no-repeat center center;
       width: 35px;
       height: 30px;
       bottom: 30px;
